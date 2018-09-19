@@ -1,4 +1,4 @@
 <?php
-	//Checking test
+	//Checking test 2
 	phpinfo(); 
 ?>
