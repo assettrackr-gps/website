@@ -1,3 +1,4 @@
 <?php
+	//Checking
 	phpinfo(); 
 ?>
