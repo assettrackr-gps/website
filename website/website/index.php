@@ -33,10 +33,10 @@
 			<div class="col-md-4" style="width:30%;background:#f9f9f9;border:1px solid;border-color:#d6d6d6;border-radius:5px;box-shadow: 0 0 2px #d8d8d8;" >
 				<h1 style="font-weight:bold;text-align:center;font-family: sans-serif; font-size: 24px;"><strong>Welcome</strong></h1>
 				<br/>
-				<?php if(isset($mesg) && !empty($mesg)) { ?>
+				<?php	if(isset($mesg) && !empty($mesg)) { ?>
 				<strong><span style="color:#00ffff;"><?php echo $mesg ?></span></strong>
 				<?php } ?>
-				<form action="/auth/login" method="post" id="login_form">
+				<form action="" method="post" id="login_form">
 					<div class="form-texts">
 						<input type="text" style="font-family: sans-serif;font-size: 14px;" class="form-text form-control form-control-custom"
 							placeholder="Email" name="email" value="">
@@ -55,6 +55,9 @@
 					<div class="form-texts" style="font-size:12px;font-family:sans-serif;margin-top:60px;">
 						<a href="#" style="color:#e42b49">Forgot your password?</a>
 					</div>
+					<div class="form-texts" style="font-size:12px;font-family:sans-serif;margin-top:60px;text-align:center;<?php if(!isset($_POST['email']) || empty($_POST['email'])) { ?>display:none<?php } ?>">
+                                                Success
+                                        </div>
 	
 				</form>
 							
