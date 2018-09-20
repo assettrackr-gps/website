@@ -49,13 +49,13 @@
 							<input type="checkbox" />Remember me
 					</div>
 							<div class="form-texts"style="float:right">
-						<input class="btn-send-message" style="width:100px;background-color:#ff3232;font-family: sans-serif;font-size: 14px;" value="Login" type="submit">
+						<input class="btn-send-message" style="width:100px;background-color:#ff3232;font-family: sans-serif;font-size: 14px;" value="Login" type="submit" name="click">
 						<!--<input class="btn-send-message" style="width:125px;background-color:#999;font-family: sans-serif;font-size: 14px;" value="Clear" type="reset"/>-->
 					</div>
 					<div class="form-texts" style="font-size:12px;font-family:sans-serif;margin-top:60px;">
 						<a href="#" style="color:#e42b49">Forgot your password?</a>
 					</div>
-					<div class="form-texts" style="font-size:12px;font-family:sans-serif;margin-top:60px;text-align:center;<?php if(!isset($_POST['email']) || empty($_POST['email'])) { ?>display:none<?php } ?>">
+					<div class="form-texts" style="font-size:12px;font-family:sans-serif;margin-top:60px;text-align:center;<?php if(!isset($_POST['email']) || empty($_POST['email'])) { ?>display:none<?php } ?>" name = "test">
                                                 Success
                                         </div>
 	
