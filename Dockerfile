@@ -16,7 +16,9 @@ RUN apt-get install -y curl
 # Install PHP 5.6
 RUN apt-get install -y php5.6 libapache2-mod-php5.6 php5.6-curl php5.6-gd php5.6-mbstring php5.6-mcrypt php5.6-mysql php5.6-xml php5.6-xmlrpc
 # Enable apache mods.
+#running php file permission across the container
 RUN a2enmod php5.6
+#giving sudo access to the container
 RUN a2enmod rewrite
 
 #RUN svn export --username="aakash" --password="atr123$$" svn://184.72.229.120/svndir/repos/appledin/atr_1_0_2 /var/www
